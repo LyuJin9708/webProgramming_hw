@@ -23,3 +23,10 @@
 section {
   padding: 1rem;
 }
+
+.contents_home {
+  display : grid; /* 그리드 속성 추가 */
+  grid-template-columns: 1fr 1fr; /*그리드 모양 1:1*/
+  grid-gap: 2rem;
+  box-sizing: border-box;
+}
