@@ -1,0 +1,13 @@
+.section {
+    float: left;
+    width: 80%;
+    height: 80%;
+    padding: auto;
+}
+
+#covid-19>summary {
+    font-size : 1.2rem;
+}
+#covid-19>div {
+    padding-left: 1.5rem;
+}

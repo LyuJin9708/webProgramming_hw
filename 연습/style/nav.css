@@ -1,0 +1,29 @@
+.nav {
+    width: 20%;
+    height: 100%;
+    float: left;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+#main_menu>li {
+    float: left;
+    position: relative;
+}
+#main_menu>li>a {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    /* letter-spacing: 0.05em; */
+    /* 글자 사이 간격 조절 */
+    display: block;
+    padding: 10px 20px;
+    color: black;
+}
+#main_menu>li:hover {
+    opacity: 1;
+    visibility: visible;
+    background-color:skyblue;
+    color: aqua;
+}
