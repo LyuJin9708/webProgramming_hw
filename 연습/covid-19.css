@@ -1,6 +1,42 @@
 #covid19_summary>summary {
     font-size : 1.2rem;
+    margin-bottom: 1em;
 }
 #covid19_summary>div {
     padding-left: 1.5rem;
+    background-color: aqua;
+}
+
+
+#covid_table {
+    border-collapse: collapse;
+    border: 1px none black;
+}
+td {
+    text-align : left;
+	padding : 5px;
+	height : max-content;
+	width : fit-content;
+    font-size: 0.5em;
+}
+#table_row {
+    border: 1px solid black;
+    background-color: aqua;
+}
+#table_1strow {
+    width:50px;
+}
+
+#explain {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+}
+#covid19_summary a {
+    margin-left: 2em;
+}
+#covid19_summary>iframe {
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
 }
