@@ -1,7 +1,9 @@
-.section {
-    float: left;
-    width: 80%;
-    height: 80%;
-    padding: auto;
-    background-color: blanchedalmond;
+.section>div>img {
+    padding-top: 5%;
+    width: 50%;
+    alt: "코로나 이미지";
+    align-items: center;
+}
+.section>div {
+    text-align: center;
 }

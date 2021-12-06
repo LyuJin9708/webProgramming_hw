@@ -1,6 +1,4 @@
-.section {
-    float: left;
-    width: 80%;
-    height: 80%;
-    padding: auto;
+#covid-vaccine {
+    float: inline-end;
+    justify-content:center;
 }

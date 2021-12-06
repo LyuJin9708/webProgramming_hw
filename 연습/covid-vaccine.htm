@@ -5,6 +5,7 @@
     <style>
         @import url(./style/header.css);
         @import url(./style/nav.css);
+        @import url(./style/section.css);
         @import url(covid-vaccine.css);
     </style>
 </head>
@@ -23,8 +24,15 @@
         </ul>
     </nav>
     <section class="section">
-        <hr>
-        <div>여기가 covid-vaccine section</div>
+        <h2>코로나 백신</h2><hr>
+        <div>
+            <select name="vaccine" id="covid-vaccine">
+                <option value="1">아스트라제네카 백신</option>
+                <option value="2">얀센 백신</option>
+                <option value="3" selected>화이자 백신</option>
+                <option value="4">모더나 백신</option>
+            </select>
+        </div>
     </section>
 </body>
 </html>

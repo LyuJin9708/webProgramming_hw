@@ -1,29 +1,34 @@
-.nav {
-    width: 20%;
-    height: 100%;
-    float: left;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* width:max-content; */
+    width: 155px;
+    position: fixed;
+    /* display: inline; */
+    height:fit-content;
+    background-color: whitesmoke;
 }
 #main_menu>li {
-    float: left;
+    float:none;
     position: relative;
+    display: block;
+    width:max-content;
+    height: min-content;
+    text-align: center;
 }
 #main_menu>li>a {
     font-size: 0.75rem;
     text-align: center;
     font-weight: bolder;
+    text-align: center;
     text-decoration: none;
+    display: block;
+    padding: 10px 30px;
+    color: black;
     /* letter-spacing: 0.05em; */
     /* 글자 사이 간격 조절 */
-    display: block;
-    padding: 10px 20px;
-    color: black;
 }
 #main_menu>li:hover {
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1; */
     background-color:skyblue;
-    color: aqua;
 }

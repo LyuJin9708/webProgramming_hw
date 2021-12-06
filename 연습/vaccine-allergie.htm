@@ -5,6 +5,7 @@
     <style>
         @import url(./style/header.css);
         @import url(./style/nav.css);
+        @import url(./style/section.css);
         @import url(vaccine-allergie.css);
     </style>
 </head>
@@ -23,8 +24,26 @@
         </ul>
     </nav>
     <section class="section">
-        <hr>
-        <div>여기가 vaccine-allergie section</div>
+        <article>
+            <h2>백신 이상 반응</h2><hr>
+            <div>백신 이상 반응이란,~</div><br>
+            <details id="allergie_summary">
+                <a href="#" target="_blank">고열</a><br>
+                <a href="#" target="_blank">기침</a><br>
+                <a href="#" target="_blank">기타..</a><br>
+                <summary>
+                    백신 이상 반응 종류
+                </summary>
+            </details>
+            <h2>시청각 영상자료</h2><hr>
+            <details id="allergie_summary">
+                <iframe src="https://www.youtube.com/embed/k2x0FQkF0fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <summary>
+                    관련 영상
+                </summary>
+            </details>
+            <iframe src="https://www.youtube.com/embed/k2x0FQkF0fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
     </section>
 </body>
 </html>
