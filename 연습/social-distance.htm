@@ -8,6 +8,26 @@
         @import url(./style/section.css);
         @import url(social-distance.css);
     </style>
+    <script>
+        function handleOnChange(e) {
+            const value = e.value;
+            const city = e.options[e.selectedIndex].text;
+
+            if(value == '1'||value == '2'||value == '3'||value == '4'||value == '5') {
+                alert(city+"의 사회적 거리두기 단계는 1단계 입니다.");
+            }
+            if(value == '6'||value == '7'||value == '8'||value == '9') {
+                alert(city+"의 사회적 거리두기 단계는 2단계 입니다.");
+            }
+            if(value == '10'||value == '11'||value == '12'||value == '13') {
+                alert(city+"의 사회적 거리두기 단계는 3단계 입니다.");
+            }
+            if(value == '14'||value == '15'||value == '16'||value == '17') {
+                alert(city+"의 사회적 거리두기 단계는 4단계 입니다.");
+            }
+            
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -25,12 +45,40 @@
     </nav>
     <section class="section">
         <h2>사회적 거리두기</h2><hr>
-        <details id="social_distance">
-            <div>사회적 거리두기란,~</div>
-            <summary>
-                사회적 거리두기?
-            </summary>
-        </details>
+        <div id="covid_level1">
+            <a>우리 동네 사회적 거리두기 단계는 얼마?</a>
+            <select name="vaccine" id="covid-vaccine" 
+            onchange="handleOnChange(this)">
+                <option value="1" selected>경기도</option>
+                <option value="2">강원도</option>
+                <option value="3">충청북도</option>
+                <option value="4">충청남도</option>
+                <option value="5">전라북도</option>
+                <option value="6">전라남도</option>
+                <option value="7">경상북도</option>
+                <option value="8">경상남도</option>
+                <option value="9">서울특별시</option>
+                <option value="10">인천광역시</option>
+                <option value="11">부산광역시</option>
+                <option value="12">대구광역시</option>
+                <option value="13">광주광역시</option>
+                <option value="14">대전광역시</option>
+                <option value="15">울산광역시</option>
+                <option value="16">세종특별자치시</option>
+                <option value="17">제주특별자치도</option>
+            </select>
+        </div>
+        <div id="covid_level2">
+            <a>사회적 거리 두기 단계별 실행방안</a>
+            <div id="explain_level"><a target="none" href="http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=5622">
+                1단계 (지속적 억제상태 유지)</a></div>
+            <div id="explain_level"><a target="none" href="http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=5621">
+                2단계 (지역유행 / 인원 제한)</a></div>
+            <div id="explain_level"><a target="none" href="http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=5620">
+                3단계 (권역유행 / 모임 금지)</a></div>
+            <div id="explain_level"><a target="none" href="http://ncov.mohw.go.kr/shBoardView.do?brdId=6&brdGubun=64&ncvContSeq=5619">
+                4단계 (대유행 / 외출금지)</a></div>
+        </div>
     </section>
 </body>
 </html>

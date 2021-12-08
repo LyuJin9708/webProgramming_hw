@@ -8,6 +8,30 @@
         @import url(./style/section.css);
         @import url(covid-vaccine.css);
     </style>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#ex").load("./ghkdlwk.html");
+        });
+    </script>
+    <script>
+        function handleOnChange(e) {
+            const value = e.value;
+            
+            if(value==1) {
+                document.getElementById('result').innerText = "아스트라";
+            }
+            if(value==2) {
+                document.getElementById('result').innerText = "얀센";
+            }
+            if(value==3) {
+                document.getElementById('result').innerText = "화이자";
+            }
+            if(value==4) {
+                document.getElementById('result').innerHTML = '<object type="text/html" data="./모더나.html"></object>';
+            }
+        }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -15,7 +39,7 @@
     </header>
     <nav class="nav">
         <ul id="main_menu">
-          <li type="none"><a href="home.htm">HOMEPAGE</a>
+          <li type="none"><a href="index.html">HOMEPAGE</a>
           <li type="none"><a href="covid-19.htm">COVID-19</a>
           <li type="none"><a href="covid-condition.htm">국내 코로나 현황</a>          </li>
           <li type="none"><a href="covid-vaccine.htm">코로나 백신</a>
@@ -26,13 +50,18 @@
     <section class="section">
         <h2>코로나 백신</h2><hr>
         <div>
-            <select name="vaccine" id="covid-vaccine">
+            <select name="vaccine" id="covid-vaccine"
+            onchange="handleOnChange(this)">
                 <option value="1">아스트라제네카 백신</option>
                 <option value="2">얀센 백신</option>
                 <option value="3" selected>화이자 백신</option>
                 <option value="4">모더나 백신</option>
             </select>
         </div>
+        <div id="result">
+            화이자
+        </div>
+        <div id="ex"></div>
     </section>
 </body>
 </html>
