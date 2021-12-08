@@ -9,26 +9,32 @@
         @import url(covid-vaccine.css);
     </style>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#ex").load("./ghkdlwk.html");
-        });
-    </script>
     <script>
+        $(document).ready(function(){
+            $("#result").load("./화이자.html");
+        });
         function handleOnChange(e) {
             const value = e.value;
             
             if(value==1) {
-                document.getElementById('result').innerText = "아스트라";
+                $(document).ready(function(){
+                    $("#result").load("./아스트라제네카.html");
+                });
             }
             if(value==2) {
-                document.getElementById('result').innerText = "얀센";
+                $(document).ready(function(){
+                    $("#result").load("./얀센.html");
+                });
             }
             if(value==3) {
-                document.getElementById('result').innerText = "화이자";
+                $(document).ready(function(){
+                    $("#result").load("./화이자.html");
+                });
             }
             if(value==4) {
-                document.getElementById('result').innerHTML = '<object type="text/html" data="./모더나.html"></object>';
+                $(document).ready(function(){
+                    $("#result").load("./모더나.html");
+                });
             }
         }
     </script>
@@ -58,10 +64,7 @@
                 <option value="4">모더나 백신</option>
             </select>
         </div>
-        <div id="result">
-            화이자
-        </div>
-        <div id="ex"></div>
+        <div id="result"></div>
     </section>
 </body>
 </html>
