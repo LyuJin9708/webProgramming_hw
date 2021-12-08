@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en,ko">
+<head>
+    <title>웹프로그래밍 과제</title>
+    <style>
+        @import url(./style/header.css);
+        @import url(./style/nav.css);
+        @import url(./style/section.css);
+        @import url(covid-19.css);
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1><a href = "home.htm">COVID-19</a></h1>
+    </header>
+    <nav class="nav">
+        <ul id="main_menu">
+          <li type="none"><a href="home.htm">HOMEPAGE</a>
+          <li type="none"><a href="covid-19.htm">COVID-19</a>
+          <li type="none"><a href="covid-condition.htm">국내 코로나 현황</a>          </li>
+          <li type="none"><a href="covid-vaccine.htm">코로나 백신</a>
+          <li type="none"><a href="vaccine-allergie.htm">백신 이상 반응</a>
+          <li type="none"><a href="social-distance.htm">사회적 거리두기</a>
+        </ul>
+    </nav>
+    <section class="section">
+        <article>
+            <h2>COVID-19</h2><hr>
+            <details id="covid19_summary">
+                <table id="covid_table">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" id="table_1strow">병원체</th>
+                            <td>Severe Acute Respiratory Syndrome-Coronavirus-2(SARS-CoV-2)</td>
+                            <tr><td>Coronaviridae family, Betacoronavirus genus Sarbecovirus subgenus에 속함</td></tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" id="table_1strow">전파경로</th>
+                            <td>주된 전파경로는 감염자의 호흡기 침방울(비말)에 의한 전파</td>
+                            <tr><td>사람 간에 전파되며, 대부분의 감염은 감염자가 기침, 재채기, 말하기, 노래 등을할 때 발생한 호흡기 침방울(비말)을다른사람이 밀접접촉(주로 2m 이내)하여 발생</td></tr>
+                            <tr><td>현재까지 연구결과에 의하면, 비말 이외, 표면접촉*, 공기 등을 통해서도 전파가 가능하나, 공기전파는 의료기관의에어로졸 생성 시술**, 밀폐된공간에서 장시간 호흡기 비말을 만드는환경***등 특정 환경에서 제한적으로 전파되는 것으로 알려짐</td></tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="1" id="table_1strow">잠복기</th>
+                            <td>1~14일(평균 5~7일)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" id="table_1strow">진단기준</th>
+                            <td>환자 : 임상양상에 관계없이 진단을 위한 검사기준에 따라 코로나19 감염이 확인된 자</td>
+                            <tr><td>진단을 위한 검사 기준<br>
+                                <a>코로나19 유전자(PCR) 검출</a><br>
+                                <a>바이러스 분리</a></td></tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" id="table_1strow">증상</th>
+                            <td>임상 증상은 무증상, 경증, 중등증, 중증까지 다양</td>
+                            <tr><td>주요 증상으로는 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실</td></tr>
+                            <tr><td>그 외에 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, 어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등이 다양하게 나타남</td></tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" id="table_1strow">치료</th>
+                            <td>특이치료제는 없으며 증상에 따른 해열제, 수액공급, 진해제 등 대증치료</td>
+                            <tr><td>호흡 곤란 시 산소를 공급하고 필요한 경우에는 기계호흡이나 체외막 산소공급 등의 처치를 시행</td></tr>
+                            <tr><td>산소 치료가 필요한 환자에서 렘데시비르의 효과가 일부 확인되어 우리나라를 포함한 여러 나라에서 긴급 승인이 되었거나, 긴급 승인을 준비 중임특이적인 항바이러스제 없음</td></tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" id="table_1strow">치명률</th>
+                            <td>전세계 치명률은 지역, 인구집단연령 구조, 감염 상태 및 기타 요인에 의해 0.1~25%로 다양함</td>
+                            <tr><td>전세계 치명률은 0.00%~1.63% (중위값 0.27%)로 보정 후 0.00~1.54%(중위값 0.23%)<br>
+                                (Bulletin of the World Health Organization. 2021)<br>(https://www.who.int/bulletin/volumes/99/1/20-265892/en/)</td></tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" id="table_1strow">예방</th>
+                            <td>올바른 손씻기</td>
+                            <tr><td>기침 예절 준수</td></tr>
+                            <tr><td>씻지 않은 손으로 눈, 코, 입 만지지 않기</td></tr>
+                            <tr><td>주위 환경을 자주 소독하고 환기하기</td></tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><hr><br>
+                <summary>
+                    COVID-19란?
+                </summary>
+            </details>
+            <details id="covid19_summary">
+                <dt>&#45;&nbsp;개요</dt>
+                    <dd>코로나 바이러스(CoV)는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자 크기 27~32kb의 RNA 바이러스</dd>
+                <dt>&#45;&nbsp;분류</dt>
+                    <dd>코로나 바이러스과에는 4개의 속(알파, 베타, 감마, 델타)이 있음</dd>
+                    <dd><a>알파,베타 : 사람과 동물에게 감염</a></dd>
+                    <dd><a>감마,델타 : 동물에게 감염</a></dd>
+                <dt>&#45;&nbsp;형태</dt>
+                    <dd>형태는 코로나  바이러스의 명명과 같이 전자현미경 관찰시 구형</dd>
+                    <dd><a>외부 spike 단백질이 특징적인 크라운형태</a></dd>
+                <dt>&#45;&nbsp;사람감염 코로나 바이러스</dt>
+                    <dd>사람감염 코로나 바이러스는 현재까지 6종류가 알려져 있음</dd>
+                    <dd><a>감기를 일으키는 유형(229E, OC43, NL63, HKU1</a></dd>
+                    <dd><a>중증폐렴을 일으킬 수 있는 유형(SARS-CoV, MERS-CoV)</a></dd>
+                <br><hr><br>
+                <summary>
+                    코로나 바이러스 분류 및 특성
+                </summary>
+            </details>
+            <a id="explain" href="http://ncov.mohw.go.kr/baroView.do?brdId=4&brdGubun=41&dataGubun=&ncvContSeq=&contSeq=&board_id=&gubun=" target="none">
+                더 많은 정보는 여기(질병관리청 홈페이지 바로가기)</a>
+            <h2>영상 자료</h2><hr>
+            <details id="covid19_summary">
+                <iframe src="https://www.youtube.com/embed/lSJSBQjSJ5Q" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><hr><br>
+                <summary>
+                    코로나19 감염병의 이해(from 질병관리청)
+                </summary>
+            </details>
+            <details id="covid19_summary">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/24jc8mnov9k" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br><hr><br>
+                <summary>
+                    신종 코로나 바이러스 감염증?(from 보건복지부)
+                </summary>
+            </details>
+        </article>
+    </section>
+</body>
+</html>
