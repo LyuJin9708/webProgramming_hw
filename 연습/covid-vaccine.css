@@ -1,4 +1,7 @@
 #covid-vaccine {
-    float: inline-end;
-    justify-content:center;
+    float:right;
+}
+
+#result {
+    margin: 5%;
 }

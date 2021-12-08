@@ -1,3 +1,33 @@
 #social_distance>div {
     padding-left: 1.5rem;
 }
+
+#covid_level1 {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#covid_level1>a {
+    font-size: 1.2em;
+}
+#covid_level1>select {
+    width: auto;
+    height: max-content;
+    text-align: center;
+}
+
+#covid_level2 {
+    margin-top: 10%;
+    text-align: center;
+}
+#covid_level2>a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#explain_level {
+    margin-top: 3%;
+    text-decoration: none;
+    font-weight: bold;
+}
