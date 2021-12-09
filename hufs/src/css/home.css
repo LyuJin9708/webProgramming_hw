@@ -1,0 +1,10 @@
+div>img {
+    padding-top: 5%;
+    width: 60%;
+    alt: "코로나 이미지";
+    align-items: center;
+}
+div {
+    text-align: center;
+    font-style:italic;
+}
