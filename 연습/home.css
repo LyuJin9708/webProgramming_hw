@@ -1,10 +1,23 @@
-.section>div>img {
+/* .section>div>img {
     padding-top: 5%;
     width: 60%;
     alt: "코로나 이미지";
     align-items: center;
 }
 .section>div {
+    text-align: center;
+    font-style:italic;
+} */
+#home_image {
+    background-image: url("./image/homepage_background_image.jpeg");
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 5%;
+    padding-bottom: 30%;
+}
+#home_image>h1 {
+    font-size:xx-large;
     text-align: center;
     font-style:italic;
 }

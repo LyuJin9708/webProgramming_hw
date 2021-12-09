@@ -1,0 +1,27 @@
+#box1 {
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+}
+#box1>div {
+    margin:auto;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 5%;
+}
+
+#box2 {
+    margin-top: 5%;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+#box2>img {
+    width: 60%;
+    alt: "코로나 이미지";
+    align-items: center;
+    text-align: center;
+}
