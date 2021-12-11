@@ -3,5 +3,7 @@
 }
 
 #result {
+    text-align: center;
     margin: 5%;
+    padding-top: 3%;
 }
